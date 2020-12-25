@@ -30,17 +30,15 @@ def multiply_matrix(m1,m2):
     print("not same nxm")
     return []
   m0 = create_matrix(num_rows,num_cols)
-  i = 0
-  j = 0
-  while i < num_rows:
-    while j < num_cols:
-      for x in range(len(m1[0])):
-        m0[i][j] += m1[i][x]*m2[x][j]
+  for i in range(num_rows):
+    for j in range(num_cols):
+      x = 0
+      while x < num_cols:
+        m0[i][j] += m1[i][0+x]*m2[0+x][j]
+        x += 1
         print(m0)
-      j += 1
-    j = 0
-    i += 1
   return m0
 
-matrix = [[1],[1],[1]]
-matrix1 = [[1,2,3]]
+m1 = [[3],[1],[3]]
+m2 = [[1,2,3]]
+    

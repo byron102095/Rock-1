@@ -41,6 +41,3 @@ def multiply_matrix(m1,m2):
     j = 0
     i += 1
   return m0
-
-matrix = [[1],[1],[1]]
-matrix1 = [[1,2,3]]
